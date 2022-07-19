@@ -1,0 +1,27 @@
+{
+  "name": "@adzz/commons",
+  "version": "1.0.1",
+  "description": "reusable js",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adzzdev/commons.git"
+  },
+  "keywords": [
+    "@adzzutils",
+    "@adzzcommons"
+  ],
+  "author": "adzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adzzdev/commons/issues"
+  },
+  "homepage": "https://github.com/adzzdev/commons#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
