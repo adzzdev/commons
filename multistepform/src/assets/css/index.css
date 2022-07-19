@@ -1,0 +1,47 @@
+table {
+    display: block !important;
+}
+
+th {
+    text-align: center;
+}
+
+.back-button, .next-button{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 30px;
+    font-size: 0.90rem;
+}
+
+.instruction-section{
+    position:relative;
+    background-color: #0093E9;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    background-position: center;
+    background-size: cover;
+}
+
+.instruction-section::after{
+    content: " ";
+    position:absolute;
+    background-color: rgba(0 0 0 / 20%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.form-section, .input-wrapper{
+    min-height: 500px;
+}
+.input-container{
+    height: 100%;
+}
+/* .input-container > .tables{
+    height: 100%;
+} */
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}

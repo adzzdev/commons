@@ -1,0 +1,386 @@
+/********************************************* Barrating CSS Library */
+
+.br-theme-bars-reversed .br-widget {
+    height: 25px;
+    white-space: nowrap;
+}
+.br-theme-bars-reversed .br-widget a {
+    display: block;
+    width: 22px;
+    height: 22px;
+    float: left;
+    background-color: #bef5e8;
+    margin: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #50E3C2;
+    text-align: center;
+}
+.br-theme-bars-reversed .br-widget a.br-active,
+.br-theme-bars-reversed .br-widget a.br-selected {
+    background-color: #50E3C2;
+    color: white;
+}
+.br-theme-bars-reversed .br-widget .br-current-rating {
+    line-height: 1.3;
+    float: left;
+    padding: 0 20px 0 20px;
+    color: #50E3C2;
+    font-size: 17px;
+    font-weight: 400;
+}
+.br-theme-bars-reversed .br-readonly a {
+    cursor: default;
+}
+
+.br-theme-bars-reversed .br-readonly a.br-active,
+.br-theme-bars-reversed .br-readonly a.br-selected {
+    background-color: #7cead1;
+}
+
+.br-theme-bars-reversed .br-readonly .br-current-rating {
+    color: #7cead1;
+}
+
+@media print {
+    .br-theme-bars-reversed .br-widget a {
+            border: 1px solid #b3b3b3;
+            background: white;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+    .br-theme-bars-reversed .br-widget a.br-active,
+    .br-theme-bars-reversed .br-widget a.br-selected {
+            border: 1px solid black;
+            background: white;
+    }
+    .br-theme-bars-reversed .br-widget .br-current-rating {
+            color: black;
+    }
+}
+
+/************************************************* Caspio Styles  */
+.cbConfirmationMessages,
+.cbResultSetRecordMessage
+{
+    text-align:center !important;
+    margin-top:50px !important;
+    margin-bottom:50px !important;
+}
+
+#caspioform > div
+{
+    margin:auto;
+}
+
+.cbFormFieldCell
+{
+    vertical-align:top !important;
+    padding-top:14px !important;
+}
+
+.cbFormRequiredMarker,
+*[name="Submit"]
+{
+    display:none !important;
+}
+
+.cbFormNestedTable
+{
+    width:100%;
+}
+
+@media (max-width: 850px)
+{
+    #caspioform > div,
+    section[data-cb-name="cbTable"]
+    {
+            width:100% !important;
+    }
+
+    section[data-cb-name="cbTable"]
+    {
+            margin:0px !important;
+            padding-top:10px !important;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    section[data-cb-name="cbTable"]
+    {
+            margin:0px !important;
+            width:100% !important;
+    }
+
+    section[class^="cbFormSection"] textarea
+    {
+            width:90% !important;
+    }
+}
+
+@media (max-width: 577px)
+{
+    section[data-cb-name="cbTable"]
+    {
+            margin:0px !important;
+    }
+}
+
+
+/************************************************* Caspio Logo */
+.cb-logo
+{
+    height:100px;
+}
+
+/************************************************* Widgets / Barrating */
+
+div.br-widget a
+{
+    background-color: #dedede !important;
+}
+
+.br-current-rating
+{
+    width:5px;
+}
+
+
+/************************************************* Buttons */
+
+.back-btn,
+.next-btn,
+.save-btn,
+.back-btn:hover,
+.next-btn:hover,
+.save-btn:hover
+{
+    font-weight:bold;
+    color:white;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border:none;
+    padding:10px;
+}
+
+.back-btn:hover,
+.next-btn:hover,
+.save-btn:hover
+{
+    cursor:pointer;
+}
+
+.cb-btn
+{
+    text-align:center;
+}
+
+
+.bg-blue button:hover
+{
+    background-color:#196d86 !important;
+}
+
+.bg-orange button:hover
+{
+    background-color:#d26a1d !important;
+}
+
+.bg-green button:hover
+{
+    background-color:#62981a !important;
+}
+
+.bg-grey button:hover
+{
+    background-color:#59676f !important;
+}
+
+/************************************************* Labels */
+
+.cb-title
+{
+    color:white;
+    padding:10px;
+    font-weight:900px;
+    font-size: 30px;
+    font-weight:bold;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+
+
+
+/************************************************* Containers */
+
+.cb-categories
+{
+    width:100%;
+}
+
+.cb-progressbar
+{
+    margin:auto;
+}
+
+.cb-main
+{
+    display:none;
+}
+
+.cb-footer
+{
+    width:100%;
+    text-align:center;
+    margin-bottom: 20px;
+    bottom: 0;
+    left:0;
+    display:block;
+}
+
+body
+{
+    margin-top:20px;
+    margin-bottom:50px;
+    height:100%;
+}
+
+
+/********************************************************* Progressbar */
+
+.progressbar
+{
+    counter-reset: step;
+    padding-bottom: 75px;
+}
+.progressbar li
+{
+    list-style-type: none;
+    width: 33.333333%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    font-weight:bold;
+}
+
+.progressbar li:before
+{
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #dedede;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.progressbar li:after
+{
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #dedede;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressbar li:first-child:after
+{
+    content: none;
+}
+
+.progressbar li.active
+{
+    color: green;
+}
+
+.progressbar li.active:before
+{
+    border-color: #55b776;
+}
+
+.progressbar li.active + li:after
+{
+    background-color: #55b776;
+}
+
+.progressbar li
+{
+    font-weight:bold;
+}
+
+ul.progressbar
+{
+    width:100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.progressbar li.ready
+{
+    color: green;
+}
+
+.progressbar li.ready:before
+{
+    border-color: green;
+}
+
+.progressbar li.done:before
+{
+    content: "\2713";
+}
+
+.progressbar li:before,
+.progressbar li:after
+{
+    border:2px solid;
+}
+
+.progressbar li
+{
+    font-size:18px;
+}
+
+/************************************************* Media */
+
+@media (max-width: 850px)
+{
+    .cb-progressbar
+    {
+            width:100% !important;
+    }
+
+    .progressbar li
+    {
+            /* font-size:10px !important; */
+    }
+
+    .cb-logo
+    {
+            height:70px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .progressbar li
+    {
+            /* font-size:8px !important; */
+    }
+}
