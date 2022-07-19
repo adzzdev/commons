@@ -1,13 +1,10 @@
 import $ from "jquery";
 
 /**
-* Binds HTML sections / divs to represent a Multistep form
-* - Jquery Required
-* - Bootstrap required ( 4.3.1 used )
+* Binds HTML sections / divs to represent a Multistep formd
 **/
-class MultiStepForm{
+export default class MultiStepForm{
     /**
-     * 
      * @param {Number} start 
      * @param {HTMLElement} nextButtonEl 
      * @param {HTMLElement} backButtonEl 
@@ -133,7 +130,3 @@ class MultiStepForm{
         });
     }
 }
-
-const multistepform = new MultiStepForm();
-
-export default multistepform;
